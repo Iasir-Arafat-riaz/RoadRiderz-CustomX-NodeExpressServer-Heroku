@@ -50,6 +50,11 @@ async function run() {
       // console.log(products);
       // const result = await allProducts.insertOne(products);
       // res.json(result);
+
+      // normal way
+      const products = req.body;
+      const result = await allProducts.insertOne(products);
+      res.json(result);
     });
 
     //Find all products from DB
